@@ -17,5 +17,6 @@ namespace WebApi.Models
         public bool UseDefaultCredentials { get; set; }
         public bool IsBodyHTML { get; set; }
 
+
     }
 }
