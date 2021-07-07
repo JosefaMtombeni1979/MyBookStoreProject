@@ -1,0 +1,45 @@
+
+<mat-dialog-content [formGroup]="form"> 
+  <mat-tab-group mat-align-tabs="start"   style="height:290px;scroll-behavior: auto" >
+    <mat-tab label="Purchase / Subscribe"  >  
+      <br>
+      <div style="height:200px;scroll-behavior: auto;">
+       
+        <table style="text-size-adjust:15px;">  
+          <tr>  
+              <td>  
+                <mat-form-field >
+                  <input matInput placeholder="Name"               
+                         formControlName="Name"  value="{{data.Name}}"   >
+                 </mat-form-field>
+              </td>
+              <td>  
+                <mat-form-field>
+                  <input matInput placeholder="Text"               
+                         formControlName="Text"  value="{{data.Text}}"   >
+              </mat-form-field>
+              </td>
+              <td>  
+                <mat-form-field>
+                  <input matInput placeholder="Price"               
+                         formControlName="Price"  value="{{data.Price}}"   >
+              </mat-form-field>
+              </td>
+          </tr>
+         
+        </table>
+       
+       </div> 
+    </mat-tab>
+   
+  </mat-tab-group>
+  
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button color="primary" (click)="save()" >
+     <mat-icon>save</mat-icon> Save
+ </button>
+ <button mat-button color="primary" (click)="closeDialog()">
+     <mat-icon>cancel</mat-icon> Cancel
+ </button>
+ </mat-dialog-actions>
